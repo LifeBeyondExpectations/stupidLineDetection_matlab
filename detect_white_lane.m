@@ -51,64 +51,69 @@ color_threshold = 150
 for i = 11
     imgOrigin = imread(strcat(addrOfPhotos(i).folder, '/', addrOfPhotos(i).name));
     
-    img_r = imgOrigin(:, :, 1);
-    img_g = imgOrigin(:, :, 2);
-    img_b = imgOrigin(:, :, 3);
-    
-    img_h = imgOrigin(:, :, 1);
-    img_s = imgOrigin(:, :, 2);
-    img_v = imgOrigin(:, :, 3);
-    % threshold
-    % note that the max value of the image is 1.0
-    img_r = imbinarize(img_r, (color_threshold / 255));
-    img_g = imbinarize(img_g, (color_threshold / 255));
-    img_b = imbinarize(img_b, (color_threshold / 255));
-    
-    fig1 = figure;
-    set(fig1,'WindowStyle', 'Docked');
-    set(fig1, 'name', 'img_r')
-    imshow(imgOrigin, 'InitialMagnification', 'fit')
-    
-    fig2 = figure;
-    set(fig2,'WindowStyle', 'Docked');
-    set(fig2, 'name', 'img_r')
-    imshow(img_r, 'InitialMagnification', 'fit')
 
-    fig3 = figure;
-    set(fig3,'WindowStyle', 'Docked');
-    set(fig3, 'name', 'img_r')
-    imshow(img_g, 'InitialMagnification', 'fit')
-    
-    fig4 = figure;
-    set(fig4,'WindowStyle', 'Docked');
-    set(fig4, 'name', 'img_r')
-    imshow(img_b, 'InitialMagnification', 'fit')
-    
-    
-    % threshold
-    % note that the max value of the image is 1.0
-    img_r = imbinarize(img_r, (color_threshold / 255));
-    img_g = imbinarize(img_g, (color_threshold / 255));
-    img_b = imbinarize(img_b, (color_threshold / 255));
-    
-    fig1 = figure;
-    set(fig1,'WindowStyle', 'Docked');
-    set(fig1, 'name', 'img_r')
-    imshow(imgOrigin, 'InitialMagnification', 'fit')
-    
-    fig2 = figure;
-    set(fig2,'WindowStyle', 'Docked');
-    set(fig2, 'name', 'img_r')
-    imshow(img_r, 'InitialMagnification', 'fit')
 
-    fig3 = figure;
-    set(fig3,'WindowStyle', 'Docked');
-    set(fig3, 'name', 'img_r')
-    imshow(img_g, 'InitialMagnification', 'fit')
-    
-    fig4 = figure;
-    set(fig4,'WindowStyle', 'Docked');
-    set(fig4, 'name', 'img_r')
-    imshow(img_b, 'InitialMagnification', 'fit')
-    
-end
+% for i = 11
+%     imgOrigin = imread(strcat(addrOfPhotos(i).folder, '/', addrOfPhotos(i).name));
+%     
+%     img_r = imgOrigin(:, :, 1);
+%     img_g = imgOrigin(:, :, 2);
+%     img_b = imgOrigin(:, :, 3);
+%     
+%     img_h = imgOrigin(:, :, 1);
+%     img_s = imgOrigin(:, :, 2);
+%     img_v = imgOrigin(:, :, 3);
+%     % threshold
+%     % note that the max value of the image is 1.0
+%     img_r = imbinarize(img_r, (color_threshold / 255));
+%     img_g = imbinarize(img_g, (color_threshold / 255));
+%     img_b = imbinarize(img_b, (color_threshold / 255));
+%     
+%     fig1 = figure;
+%     set(fig1,'WindowStyle', 'Docked');
+%     set(fig1, 'name', 'img_r')
+%     imshow(imgOrigin, 'InitialMagnification', 'fit')
+%     
+%     fig2 = figure;
+%     set(fig2,'WindowStyle', 'Docked');
+%     set(fig2, 'name', 'img_r')
+%     imshow(img_r, 'InitialMagnification', 'fit')
+% 
+%     fig3 = figure;
+%     set(fig3,'WindowStyle', 'Docked');
+%     set(fig3, 'name', 'img_r')
+%     imshow(img_g, 'InitialMagnification', 'fit')
+%     
+%     fig4 = figure;
+%     set(fig4,'WindowStyle', 'Docked');
+%     set(fig4, 'name', 'img_r')
+%     imshow(img_b, 'InitialMagnification', 'fit')
+%     
+%     
+%     % threshold
+%     % note that the max value of the image is 1.0
+%     img_r = imbinarize(img_r, (color_threshold / 255));
+%     img_g = imbinarize(img_g, (color_threshold / 255));
+%     img_b = imbinarize(img_b, (color_threshold / 255));
+%     
+%     fig1 = figure;
+%     set(fig1,'WindowStyle', 'Docked');
+%     set(fig1, 'name', 'img_r')
+%     imshow(imgOrigin, 'InitialMagnification', 'fit')
+%     
+%     fig2 = figure;
+%     set(fig2,'WindowStyle', 'Docked');
+%     set(fig2, 'name', 'img_r')
+%     imshow(img_r, 'InitialMagnification', 'fit')
+% 
+%     fig3 = figure;
+%     set(fig3,'WindowStyle', 'Docked');
+%     set(fig3, 'name', 'img_r')
+%     imshow(img_g, 'InitialMagnification', 'fit')
+%     
+%     fig4 = figure;
+%     set(fig4,'WindowStyle', 'Docked');
+%     set(fig4, 'name', 'img_r')
+%     imshow(img_b, 'InitialMagnification', 'fit')
+%     
+% end
