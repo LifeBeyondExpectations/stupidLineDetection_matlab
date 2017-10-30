@@ -13,7 +13,7 @@ display = [1, 0, 1, 0, 0, 0, 0, 0];
 
 %%
 threshold = 0
-radius_of_structure_element = 4
+radius_of_structure_element = 10 %4
 se_opening = strel('disk', radius_of_structure_element);
 
 
@@ -21,7 +21,7 @@ se_opening = strel('disk', radius_of_structure_element);
 addrOfPhotos = dir(strcat(pwd, '/photo/*.jpg'));
 
 
-for i = [12] %1: length(addrOfchitos)
+for i = 5 %1: length(addrOfchitos)
     
     imgOrigin = imread(strcat(addrOfPhotos(i).folder, '/', addrOfPhotos(i).name));
     imgOrigin = imresize(imgOrigin, floor([size(imgOrigin, 1), size(imgOrigin, 2)] / 10));
@@ -60,7 +60,7 @@ for i = [12] %1: length(addrOfchitos)
         max(max(imgTmp))
         
         % threshold = 50
-        for threshold = 10:10:60
+        for threshold = 30
             imgThreshold = imbinarize(imgTmp, (threshold / 255));
             %imgThreshold = myThreshold(imgTmp, threshold/255);
             figure('name', ['hsv_is_', num2str(j), 'threshold_', num2str(threshold)], 'WindowStyle', 'Docked')
